@@ -9,3 +9,9 @@ COPY ${JAR_FILE} app.jar
 
 #java -jar /opt/app/app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
+
+#Bu komut docker deamon tarafından bir image oluşturulmasını sağlıyor:
+#docker build -t eureka-server:0.0.1 .
+# -t  ---> tagini belirrtiğimiz anlamına geliyor.
+# 0.0.1 ---> verdiğimiz versiyon
+# En sondaki nokta ise dizini belirtiyoruzç
